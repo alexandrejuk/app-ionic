@@ -5,6 +5,10 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -34,7 +38,7 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #074C8B,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
