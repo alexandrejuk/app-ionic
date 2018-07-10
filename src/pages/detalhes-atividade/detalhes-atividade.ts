@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 
 @Component({
-  selector: 'page-detalhes',
-  templateUrl: 'detalhes.html'
+  selector: 'page-detalhes-atividade',
+  templateUrl: 'detalhes-atividade.html'
 })
 @IonicPage({
-  name: 'DetalhesPage',
+  name: 'DetalhesAtividadePage',
 })
-export class DetalhesPage {
+export class DetalhesAtividadePage {
 
-  public title="Detalhes Atendimento"
+  public title="Detalhes Atividade"
 
   constructor(public navCtrl: NavController) {
 
