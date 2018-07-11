@@ -3,7 +3,6 @@ import {
   NavController,
   IonicPage,
   ToastController,
-
 } from 'ionic-angular';
 
 @Component({
