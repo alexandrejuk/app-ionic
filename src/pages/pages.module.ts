@@ -7,9 +7,11 @@ import { AboutModule } from './about/about.module';
 import { AtividadeModule } from './atividade/atividade.module';
 import { DetalhesModule } from './detalhes/detalhes.module';
 import { DetalhesAtividadeModule } from './detalhes-atividade/detalhes-atividade.module';
+import { FotoModule } from './foto/foto.module';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 import { ProfileModule } from './profile/profile.module';
+import { RelatorioModule } from './relatorio/relatorio.module';
 import { TabPageModule } from './tab/tab.module';
 
 
@@ -20,9 +22,11 @@ import { TabPageModule } from './tab/tab.module';
     ComponentsModule,
     DetalhesModule,
     DetalhesAtividadeModule,
+    FotoModule,
     HomeModule,
     LoginModule,
     ProfileModule,
+    RelatorioModule,
     TabPageModule,
     ReactiveFormsModule,
     IonicPageModule,
