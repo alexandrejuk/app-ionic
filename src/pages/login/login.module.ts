@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { FormsModule } from '@angular/forms';
 
 import { LoginPage } from './login';
 
@@ -8,6 +9,7 @@ import { LoginPage } from './login';
     LoginPage,
   ],
   imports: [
+    FormsModule,
     IonicPageModule.forChild(LoginPage),
   ],
   entryComponents: [

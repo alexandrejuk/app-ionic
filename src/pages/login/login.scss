@@ -1,3 +1,58 @@
 page-login {
+  background:
+  url(/assets/imgs/bg.png);
+  background-size: cover;
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+
+  .credentials-content h1{
+    text-align: center;
+    font-size: 2.3em;
+    text-shadow: 2px 2px 2px #666;
+    margin: 0;
+    padding: 0;
+  }
+
+  .credentials-content {
+    width: 80%;
+    margin: 35% auto;
+    background: rgba( 255, 255 , 255, 0.2);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px 1px #303968;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .form-group {
+    margin-top: 40px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #28629B;
+    background: transparent;
+    transition:  all 1s ease;
+    right: 0;
+  }
+
+  .form-group input::placeholder {
+    color: #28629B;
+    font-weight: bold;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: #fff;
+  }
+
 
 }
