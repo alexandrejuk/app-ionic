@@ -94,27 +94,30 @@
   </div>
 
   <ion-fab bottom right>
-      <button ion-fab ><ion-icon name="add"></ion-icon></button>
-        <ion-fab-list side="top">
-          <button ion-fab>
-            <ion-icon ios="ios-close" md="md-close"></ion-icon>
-            <div class="label">Cancelar</div>
-          </button>
+    <button ion-fab ><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
 
-          <button ion-fab>
-            <ion-icon ios="ios-pause" md="md-pause"></ion-icon>
-            <div  class="label"dir="rtl">Pausar</div>
-          </button>
+      <button ion-fab (click)="showPrompt('cancelar_atendimento')">
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+        <div class="label">Cancelar</div>
+      </button>
 
-          <button ion-fab>
-            <ion-icon ios="ios-clipboard" md="md-clipboard"></ion-icon>
-            <div  class="label"dir="rtl">Relatório</div>
-          </button>
-          <button ion-fab>
-            <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
-            <div class="label"dir="rtl">Foto</div>
-          </button>
-      </ion-fab-list>
+      <button ion-fab (click)="showPrompt('pausar_atendimento')">
+        <ion-icon ios="ios-pause" md="md-pause"></ion-icon>
+        <div  class="label"dir="rtl">Pausar</div>
+      </button>
+
+      <button ion-fab (click)="goToPage('relatorio')">
+        <ion-icon ios="ios-clipboard" md="md-clipboard"></ion-icon>
+        <div  class="label"dir="rtl">Relatório</div>
+      </button>
+
+      <button ion-fab (click)="goToPage('foto')">
+        <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+        <div class="label"dir="rtl">Foto</div>
+      </button>
+
+    </ion-fab-list>
   </ion-fab>
 
 </ion-content>
