@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { DetalhesAtividadePage } from '../../pages/detalhes-atividade/detalhes-atividade';
@@ -9,10 +9,23 @@ import { DetalhesAtividadePage } from '../../pages/detalhes-atividade/detalhes-a
 })
 export class CardAtividadeComponent {
 
-  constructor(public navCtrl: NavController) {}
+  @Input()
+  atividade;
 
-  goToDetail(id) {
+  constructor(public navCtrl: NavController) { }
+
+  goToDetailAtividade(id) {
     this.navCtrl.push(DetalhesAtividadePage, { id });
   }
 
+  get status() {
+    const status = {
+      deslocamento_iniciado: 'Deslocamento Iniciado',
+      deslocamento_encerrado: 'Deslocamento Encerrado',
+      inicio_atividade: 'Atividade Iniciada',
+      ecerrado_atividade: 'Atividade Concluída',
+    }
+
+    return status[this.atividade.status];
+  }
 }

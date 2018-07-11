@@ -9,6 +9,7 @@ const MessagesAlert = {
   encerrado_atividade: { message: 'Atividade Encerrada 🎉!' },
   iniciado_atendimento: { message: 'Atendimento Iniciado 🎉!' },
   encerrado_atendimento: { message: 'Atendimento Encerrado 🎉!' },
+  criar_atividade: { title: 'Criar e iniciar atividade?', message: 'Deseja criar e iniciar atividade do tipo ', toast: 'Atividade Criada e Iniciada 🎉!'},
 }
 
 export default MessagesAlert;

@@ -10,7 +10,7 @@ export class CardAtendimentoComponent {
 
   constructor(public navCtrl: NavController) {}
 
-  goToDetail(id) {
+  goToDetailAtendimento(id) {
     this.navCtrl.push(DetalhesAtendimentoPage, { id });
   }
 

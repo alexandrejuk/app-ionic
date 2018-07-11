@@ -1,4 +1,4 @@
-<div class="card-main" (click)="goToDetail(1)">
+<div class="card-main" (click)="goToDetailAtividade(1)">
     <div class="card-header">
       <div class="card-header-title">
         <h5>Atividade</h5>
@@ -6,8 +6,8 @@
         </span>
       </div>
       <p class="sub-title bb">
-        ALMOÇO
+        {{ atividade?.tipo | uppercase }}
       </p>
     </div>
-    <div class="card-content pendente"><strong>Situação Pendente</strong></div>
+    <div class="card-content {{atividade.status }} === 'pendente' ? pendente : {{ atividade.status }}"><strong>Situação {{ status }}</strong></div>
   </div>

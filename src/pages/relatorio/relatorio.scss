@@ -1,41 +1,11 @@
 page-about {
+
   font-family: Arial, Helvetica, sans-serif;
   background: #f3f3f3;
   color: #313B3E;
 
   ion-content {
     background: transparent !important;
-  }
-
-  .content-detail {
-    margin-top: 10px;;
-    padding: 8px;
-    background: white;
-    border: 1px solid #e1e1e1;
-  }
-
-
-  .title {
-    word-break: inherit;
-    color: rgb(11, 0, 59);
-    text-align: center;
-  }
-
-  .bb {
-    border-bottom: 1px solid #e1e1e1;
-  }
-
-  .title-info {
-    text-align: left;
-  }
-
-  .sub-title {
-    color: rgb(131, 131, 131);
-    word-break: inherit;
-  }
-
-  .tbold {
-    font-weight: 700;
   }
 
 }
