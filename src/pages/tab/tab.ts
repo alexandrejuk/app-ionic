@@ -5,6 +5,7 @@ import { AboutPage } from './../about/about';
 import { AtividadePage } from '../atividade/atividade';
 import { HomePage } from '../home/home';
 import { ProfilePage } from './../profile/profile';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'tab-page',
