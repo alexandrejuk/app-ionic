@@ -2,6 +2,16 @@ page-detalhes {
   font-family: Arial, Helvetica, sans-serif;
   background: #f3f3f3;
 
+  ion-header {
+    display: flex;
+    align-items: center;
+    background: #074C8B !important;
+    color: #fff;
+    justify-content: space-around;
+    padding-right: 15px;
+    font-size: 1.2em;
+  }
+
   ion-header ion-nav ion-title {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 1em !important;
@@ -77,4 +87,41 @@ page-detalhes {
     font-size: 1em;
     font-weight: bold;
   }
+
+  button.action:hover {
+    opacity: 0.8;
+  }
+
+
+
+  ion-fab-list button {
+    background: #3076B5 !important;
+    color: #fff !important;
+  }
+
+  .fab {
+    contain: initial;
+  }
+
+  ion-fab {
+      ion-fab-list button[ion-fab] {
+          overflow: visible !important;
+
+          div.label {
+            position: absolute !important;
+            right: 48px !important;
+            background: rgba(0,0,0,0.7) !important;
+            height: 24px !important;
+            line-height: 16px !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+            border-radius: 3px !important;
+            color: #fff !important;
+          }
+      }
+  }
+
+
 }

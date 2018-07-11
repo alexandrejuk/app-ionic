@@ -13,6 +13,10 @@ card-atividade-component {
     padding: 3px;
   }
 
+  .card-main:hover {
+    background: rgba(0, 0, 0, 0.01) !important;
+  }
+
   .sub-title {
     color: rgb(131, 131, 131);
     word-break: inherit;

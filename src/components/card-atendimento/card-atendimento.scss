@@ -8,6 +8,10 @@ card-atendimento-component {
     border-radius: 3px;
   }
 
+  .card-main:hover {
+    background: rgba(0, 0, 0, 0.01);
+  }
+
   .card-header h5, .card-header p, .card-content h6, .card-content p {
     margin: 0;
     padding: 3px;
