@@ -8,6 +8,7 @@ import { AtividadeModule } from './atividade/atividade.module';
 import { DetalhesModule } from './detalhes/detalhes.module';
 import { DetalhesAtividadeModule } from './detalhes-atividade/detalhes-atividade.module';
 import { HomeModule } from './home/home.module';
+import { LoginModule } from './login/login.module';
 import { ProfileModule } from './profile/profile.module';
 import { TabPageModule } from './tab/tab.module';
 
@@ -20,6 +21,7 @@ import { TabPageModule } from './tab/tab.module';
     DetalhesModule,
     DetalhesAtividadeModule,
     HomeModule,
+    LoginModule,
     ProfileModule,
     TabPageModule,
     ReactiveFormsModule,
