@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
-import { DetalhesPage } from '../../pages/detalhes/detalhes';
+import { DetalhesAtendimentoPage } from '../../pages/detalhes-atendimento/detalhes-atendimento';
 
 @Component({
   selector: 'card-atendimento-component',
@@ -12,7 +11,7 @@ export class CardAtendimentoComponent {
   constructor(public navCtrl: NavController) {}
 
   goToDetail(id) {
-    this.navCtrl.push(DetalhesPage, { id });
+    this.navCtrl.push(DetalhesAtendimentoPage, { id });
   }
 
 }

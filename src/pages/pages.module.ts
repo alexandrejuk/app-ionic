@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AboutModule } from './about/about.module';
 import { AtividadeModule } from './atividade/atividade.module';
-import { DetalhesModule } from './detalhes/detalhes.module';
+import { DetalhesAtendimentoModule } from './detalhes-atendimento/detalhes-atendimento.module';
 import { DetalhesAtividadeModule } from './detalhes-atividade/detalhes-atividade.module';
 import { FotoModule } from './foto/foto.module';
 import { HomeModule } from './home/home.module';
@@ -20,7 +20,7 @@ import { TabPageModule } from './tab/tab.module';
     AboutModule,
     AtividadeModule,
     ComponentsModule,
-    DetalhesModule,
+    DetalhesAtendimentoModule,
     DetalhesAtividadeModule,
     FotoModule,
     HomeModule,

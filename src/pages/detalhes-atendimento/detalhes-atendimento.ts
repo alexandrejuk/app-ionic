@@ -12,13 +12,13 @@ import { RelatorioPage } from './../relatorio/relatorio';
 import MessagesAlert from '../../utils/alertMessages';
 
 @Component({
-  selector: 'page-detalhes',
-  templateUrl: 'detalhes.html'
+  selector: 'page-detalhes-atendimento',
+  templateUrl: 'detalhes-atendimento.html'
 })
 @IonicPage({
   name: 'DetalhesPage',
 })
-export class DetalhesPage {
+export class DetalhesAtendimentoPage {
 
   public title="Detalhes Atendimento"
 
