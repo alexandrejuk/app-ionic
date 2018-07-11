@@ -15,4 +15,30 @@ page-atividade {
     text-align: center;
   }
 
+  ion-fab-list button {
+    background: #3076B5 !important;
+    color: #fff !important;
+  }
+
+  .fab {
+    contain: initial;
+  }
+
+  ion-fab {
+      ion-fab-list button[ion-fab] {
+          overflow: visible !important;
+
+          div.label {
+            position: absolute !important;
+            right: 48px !important;
+            background: rgba(0,0,0,0.7) !important;
+            height: 24px !important;
+            line-height: 16px !important;
+            padding: 5px 8px !important;
+            border-radius: 3px !important;
+            color: #fff !important;
+          }
+      }
+  }
+
 }

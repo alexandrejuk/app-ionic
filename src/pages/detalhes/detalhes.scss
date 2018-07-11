@@ -110,18 +110,14 @@ page-detalhes {
           div.label {
             position: absolute !important;
             right: 48px !important;
-            background: rgba(0,0,0,0.7) !important;
+            background: rgba(0,0,0,0.8) !important;
             height: 24px !important;
             line-height: 16px !important;
-            padding-left: 8px !important;
-            padding-right: 8px !important;
-            padding-top: 5px !important;
-            padding-bottom: 5px !important;
+            padding: 5px 8px !important;
             border-radius: 3px !important;
             color: #fff !important;
           }
       }
   }
-
 
 }
