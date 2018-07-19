@@ -12,16 +12,16 @@
     </div>
   </div>
 
-  <ion-fab bottom right>
+  <ion-fab bottom right #fab>
       <button ion-fab ><ion-icon name="add"></ion-icon></button>
         <ion-fab-list side="top">
 
-          <button ion-fab (click)="showPrompt('cancelar_atividade')">
+          <button ion-fab (click)="showPrompt('cancelar_atividade', fab)">
             <ion-icon ios="ios-close" md="md-close"></ion-icon>
             <div class="label">Cancelar</div>
           </button>
 
-          <button ion-fab (click)="showPrompt('pausar_atividade')">
+          <button ion-fab (click)="showPrompt('pausar_atividade', fab)">
             <ion-icon ios="ios-pause" md="md-pause"></ion-icon>
             <div  class="label"dir="rtl">Pausar</div>
           </button>

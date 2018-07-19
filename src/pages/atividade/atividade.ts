@@ -3,6 +3,7 @@ import {
   AlertController,
   NavController,
   IonicPage,
+  FabContainer,
   ToastController,
 } from 'ionic-angular';
 
@@ -31,7 +32,7 @@ export class AtividadePage {
   ) { }
 
 
-  criarAtividade(tipo: string, action) {
+  criarAtividade(tipo: string, action, fab) {
     const atividade = {
       _id: this.atividades.length + 1,
       descricao: '',
@@ -42,7 +43,8 @@ export class AtividadePage {
       status: 'deslocamento_iniciado',
       synced: false,
     };
-    this.showConfirm(this.messageAlert[action], atividade)
+    this.showConfirm(this.messageAlert[action], atividade);
+    fab.close();
   }
 
   presentToast({ message }) {

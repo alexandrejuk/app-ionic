@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {
   AlertController,
   IonicPage,
+  FabContainer,
   NavController,
   ToastController,
 } from 'ionic-angular';
@@ -27,7 +28,7 @@ export class DetalhesAtividadePage {
   ) { }
 
 
-  showPrompt(type) {
+  showPrompt(type, fab) {
     const { title, message, name, placeholder, toast } = this.messageAlert[type];
     const prompt = this.alertCtrl.create({
       title,
@@ -53,6 +54,7 @@ export class DetalhesAtividadePage {
       ]
     });
     prompt.present();
+    fab.close();
   }
 
   presentToast(message) {

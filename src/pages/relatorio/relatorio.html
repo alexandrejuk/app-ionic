@@ -5,5 +5,123 @@
 </ion-header>
 
 <ion-content>
+  <div class="content">
+
+    <div class="card-report">
+      <div class="card-report-header">
+        <h5 class="title text-bold">
+          <ion-icon name="bookmarks"></ion-icon> TREINAMENTO
+        </h5>
+        <button ion-button color="primary-dark" clear><ion-icon name="md-arrow-down"></ion-icon></button>
+      </div>
+      <div class="card-report-content">
+
+        <ion-item>
+          <ion-label>Software</ion-label>
+          <ion-select cancelText="Cancelar">
+            <ion-option *ngFor="let software of softwares" [value]="software">
+              {{ software }}
+            </ion-option>
+          </ion-select>
+        </ion-item>
+
+        <div class="list-check mt-2">
+          <ion-item no-lines><ion-label class="title">Tópicos</ion-label></ion-item>
+          <div class="check" *ngFor="let itemName of treinamentoContent">
+            <ion-item no-lines>
+              <ion-checkbox color="primary"></ion-checkbox>
+              <ion-label>{{ itemName }}</ion-label>
+            </ion-item>
+          </div>
+        </div>
+
+        <ion-item>
+          <ion-label stacked>Observações</ion-label>
+          <ion-textarea rows="3" cols="10"></ion-textarea>
+        </ion-item>
+
+      </div>
+    </div>
+
+    <div class="card-report">
+      <div class="card-report-header">
+        <h5 class="title text-bold">
+          <ion-icon name="construct"></ion-icon> EQUIPAMENTO(S)
+        </h5>
+        <button ion-button color="primary-dark" clear><ion-icon name="md-arrow-down"></ion-icon></button>
+      </div>
+
+      <div class="card-report-content">
+        <div class="card-report-header-equipamento">
+          <h6 class="title">Equipamento #1</h6>
+          <button ion-button color="danger" clear><ion-icon name="trash"></ion-icon></button>
+        </div>
+
+        <ion-item>
+          <ion-label>Modelo</ion-label>
+          <ion-select cancelText="Cancelar">
+            <ion-option *ngFor="let software of softwares" [value]="software">
+              {{ software }}
+            </ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>N. Serie</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <div class="list-check mt-2">
+          <div class="check mt-2" *ngFor="let itemName of equipamentoActions">
+            <ion-item no-lines class="mt-2">
+              <ion-label>{{ itemName }}</ion-label>
+              <ion-radio value="false" color="primary"></ion-radio>
+            </ion-item>
+          </div>
+        </div>
+
+        <ion-item no-lines>
+          <h6 class="title text-bold mt">Resumo da Análise</h6>
+        </ion-item>
+
+        <ion-item text-wrap>
+          <ion-label stacked>Problema</ion-label>
+          <ion-textarea rows="4" cols="10"></ion-textarea>
+        </ion-item>
+
+        <ion-item text-wrap>
+          <ion-label stacked>Solução</ion-label>
+          <ion-textarea rows="4" cols="10"></ion-textarea>
+        </ion-item>
+      </div>
+
+      <ion-item center no-lines text-right>
+        <button ion-button color="primary" class="text-bold" round>NOVO &nbsp; <ion-icon name="add"></ion-icon></button>
+      </ion-item>
+    </div>
+
+    <div class="card-report">
+      <div class="card-report-header">
+        <h5 class="title text-bold">
+            <ion-icon name="alert"></ion-icon> PENDÊNCIA
+        </h5>
+        <button ion-button color="primary-dark" clear><ion-icon name="md-arrow-down"></ion-icon></button>
+      </div>
+
+      <div class="card-report-content">
+          <ion-item text-wrap>
+            <ion-label stacked>Motivo</ion-label>
+            <ion-textarea rows="4" cols="10"></ion-textarea>
+          </ion-item>
+      </div>
+    </div>
+  </div>
 
 </ion-content>
+
+
+<ion-footer>
+  <div class="button-action">
+    <button ion-button color="secondary" round>SALVAR RELATÓRIO</button>
+  </div>
+</ion-footer>

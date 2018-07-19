@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {
   AlertController,
   IonicPage,
+  FabContainer,
   NavController,
   ToastController,
 } from 'ionic-angular';
@@ -35,15 +36,16 @@ export class DetalhesAtendimentoPage {
 
   private messageAlert = MessagesAlert;
 
-  goToPage(page, id) {
-    this.navCtrl.push(this.pages[page], { id })
+  goToPage(page, id, fab) {
+    this.navCtrl.push(this.pages[page], { id });
+    fab.close();
   }
 
   actionAtendimento() {
     this.presentToast('Deslocamento Iniciado 🎉')
   }
 
-  showPrompt(type) {
+  showPrompt(type, id, fab) {
     const { title, message, name, placeholder, toast = '' } = this.messageAlert[type];
     const prompt = this.alertCtrl.create({
       title,
@@ -69,6 +71,7 @@ export class DetalhesAtendimentoPage {
       ]
     });
     prompt.present();
+    fab.close();
   }
 
 

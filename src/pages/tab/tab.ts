@@ -20,6 +20,7 @@ export class TabPage {
   tab2Root = AtividadePage;
   tab3Root = ProfilePage;
   tab4Root = AboutPage;
+  tab5Root = LoginPage;
 
   constructor() { }
 }

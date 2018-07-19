@@ -93,26 +93,26 @@
     </div>
   </div>
 
-  <ion-fab bottom right>
+  <ion-fab bottom right #fab>
     <button ion-fab ><ion-icon name="add"></ion-icon></button>
     <ion-fab-list side="top">
 
-      <button ion-fab (click)="showPrompt('cancelar_atendimento')">
+      <button ion-fab (click)="showPrompt('cancelar_atendimento', 1, fab)">
         <ion-icon ios="ios-close" md="md-close"></ion-icon>
         <div class="label">Cancelar</div>
       </button>
 
-      <button ion-fab (click)="showPrompt('pausar_atendimento')">
+      <button ion-fab (click)="showPrompt('pausar_atendimento', 1, fab)">
         <ion-icon ios="ios-pause" md="md-pause"></ion-icon>
         <div  class="label"dir="rtl">Pausar</div>
       </button>
 
-      <button ion-fab (click)="goToPage('relatorio')">
+      <button ion-fab (click)="goToPage('relatorio', 1, fab)">
         <ion-icon ios="ios-clipboard" md="md-clipboard"></ion-icon>
         <div  class="label"dir="rtl">Relatório</div>
       </button>
 
-      <button ion-fab (click)="goToPage('foto')">
+      <button ion-fab (click)="goToPage('foto', 1, fab)">
         <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
         <div class="label"dir="rtl">Foto</div>
       </button>

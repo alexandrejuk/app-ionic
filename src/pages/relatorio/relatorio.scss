@@ -1,11 +1,96 @@
 page-relatorio {
-
   font-family: Arial, Helvetica, sans-serif;
   background: #f3f3f3;
-  color: #313B3E;
+
+  ion-header {
+    display: flex;
+    align-items: center;
+    background: #074C8B !important;
+    color: #fff;
+    justify-content: space-around;
+    padding-right: 15px;
+    font-size: 1.2em;
+  }
+
+  ion-header ion-nav ion-title {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1em !important;
+  }
 
   ion-content {
     background: transparent !important;
   }
+
+  .mt-2 {
+    margin-top: 4px;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .card-report {
+    margin-top: 12px;
+    padding: 8px;
+    background: white;
+    border: 1px solid #e1e1e1;
+  }
+
+  .list-check,
+  .check {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .check {
+    width: 50%;
+  }
+
+  .card-report-header {
+    padding: 0 16px;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-report-header-equipamento {
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-report-content {
+    padding-top: 6px
+  }
+
+  .card-report-content h5,
+  .card-report-content p {
+    margin: 0;
+    padding-top: 3px;
+  }
+
+  .title {
+    word-break: inherit;
+    color: rgb(11, 0, 59);
+    font-size: 1em;
+  }
+
+  .text-bold {
+    font-weight: 700;
+  }
+
+  .button-action {
+    margin: 16px auto;
+    text-align: center;
+  }
+
+  ion-fab-list button {
+    background: #3076B5 !important;
+    color: #fff !important;
+  }
+
 
 }
