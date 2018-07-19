@@ -6,6 +6,29 @@ page-foto {
 
   ion-content {
     background: transparent !important;
+    height: 100vh !important;
   }
+
+  .gallery {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-gallery {
+    background: red;
+    width: 48%;
+    height: auto;
+    margin: 4px;
+    background-size: cover;
+  }
+
+
+  .button-action {
+    margin: 16px auto;
+    text-align: center;
+  }
+
+
 
 }
