@@ -16,6 +16,11 @@ export class RelatorioPage {
   public title="Relatório"
   public treinamentos = [];
   public Equipamentos = [];
+  public dropDown = {
+    treinamento: false,
+    pendencia: false,
+    equipamentos: false,
+  };
 
   public treinamentoContent = [
     'Abonos',
@@ -61,5 +66,6 @@ export class RelatorioPage {
     modal.present();
   }
 
+  onDropDown = type =>  this.dropDown = { ...this.dropDown, [type]: !this.dropDown[type] };
 
 }
