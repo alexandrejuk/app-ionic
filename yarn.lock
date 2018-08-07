@@ -190,6 +190,12 @@ android-versions@^1.2.1:
   dependencies:
     semver "^5.4.1"
 
+angular2-signaturepad@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/angular2-signaturepad/-/angular2-signaturepad-2.8.0.tgz#890a66998e6b98914faa2e158b535926c9fd8798"
+  dependencies:
+    signature_pad "2.3.2"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -3463,6 +3469,10 @@ shelljs@^0.5.3:
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+signature_pad@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/signature_pad/-/signature_pad-2.3.2.tgz#ca7230021c89cedeead27b33d8d16ff254e5f04a"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

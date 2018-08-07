@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 import { SelectSearchableComponent } from 'ionic-select-searchable';
 
-import { FotoPage } from './../foto/foto';
 import { PecasPage } from './../pecas/pecas';
 import { RetirarPage } from './../retirar/retirar';
 
@@ -1245,7 +1244,6 @@ export class EquipmentPage {
   ]
 
   private pages = {
-    FotoPage,
     PecasPage,
     RetirarPage,
   };
