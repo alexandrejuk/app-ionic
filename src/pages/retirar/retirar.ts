@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
+import { SelectSearchableComponent } from 'ionic-select-searchable';
 
 @Component({
   selector: 'page-retirar',
@@ -15,5 +16,13 @@ export class RetirarPage {
   constructor(public navCtrl: NavController) {
 
   }
+
+  pecasChange(event: {
+    component: SelectSearchableComponent,
+    value: any
+  }) {
+    console.log('port:', event.value);
+  }
+
 
 }

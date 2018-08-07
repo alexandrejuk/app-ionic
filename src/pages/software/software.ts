@@ -12,6 +12,10 @@ import { SelectSearchableComponent } from 'ionic-select-searchable';
 export class SoftwarePage {
 
 
+  public dropDown = {
+    treinamento: false,
+  };
+
   public softwares = [
    { id: 1, name: 'SECULLUM ACESSO.NET' },
    { id: 2, name: 'SECULLUM ACESSO' },
@@ -57,4 +61,7 @@ export class SoftwarePage {
   }) {
     console.log('port:', event.value);
   }
+
+  onDropDown = type =>
+    this.dropDown = { ...this.dropDown, [type]: !this.dropDown[type] };
 }

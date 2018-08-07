@@ -8,7 +8,6 @@ import { ComponentsModule } from './../components/components.module';
 import { DetalhesAtendimentoModule } from './detalhes-atendimento/detalhes-atendimento.module';
 import { DetalhesAtividadeModule } from './detalhes-atividade/detalhes-atividade.module';
 import { EquipmentModule } from './equipment/equipment.module';
-import { FotoModule } from './foto/foto.module';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 import { PecasModule } from './pecas/pecas.module';
@@ -26,7 +25,6 @@ import { TabPageModule } from './tab/tab.module';
     DetalhesAtendimentoModule,
     DetalhesAtividadeModule,
     EquipmentModule,
-    FotoModule,
     HomeModule,
     IonicPageModule,
     LoginModule,

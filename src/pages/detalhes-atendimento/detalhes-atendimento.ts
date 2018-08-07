@@ -7,9 +7,7 @@ import {
   ToastController,
 } from 'ionic-angular';
 
-import { FotoPage } from './../foto/foto';
 import { RelatorioPage } from './../relatorio/relatorio';
-
 import MessagesAlert from '../../utils/alertMessages';
 
 @Component({
@@ -31,7 +29,6 @@ export class DetalhesAtendimentoPage {
 
   public pages = {
     relatorio: RelatorioPage,
-    foto: FotoPage,
   }
 
   private messageAlert = MessagesAlert;

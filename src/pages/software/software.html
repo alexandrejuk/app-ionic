@@ -7,7 +7,7 @@
 <ion-content>
   <div class="content">
     <ion-item>
-      <ion-label color="primary">Software</ion-label>
+      <ion-label color="primary" floating>Software</ion-label>
       <select-searchable
         item-content
         [(ngModel)]="software"
@@ -19,16 +19,31 @@
       </select-searchable>
     </ion-item>
     <ion-item>
-        <ion-label color="primary">Observação</ion-label>
-        <ion-input placeholder="Text Input"></ion-input>
+        <ion-label color="primary" floating>Observação</ion-label>
+        <ion-textarea></ion-textarea>
     </ion-item>
-    <ion-item no-lines>
-      <ion-label color="primary">Tópicos</ion-label>
-    </ion-item>
-    <ion-item *ngFor="let content of treinamentoContent">
-      <ion-label>{{ content }}</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+
+
+    <div class="card-report">
+        <div class="card-report-header" (click)="onDropDown('treinamento')">
+          <h5 class="title text-bold">
+            <ion-icon name="bookmarks"></ion-icon> TREINAMENTO
+          </h5>
+          <button ion-button color="primary-dark" clear>
+            <ion-icon name="md-arrow-down"></ion-icon>
+          </button>
+        </div>
+        <div class="card-report-content" *ngIf="dropDown.treinamento">
+          <ion-item no-lines>
+            <ion-label color="primary">Tópicos</ion-label>
+          </ion-item>
+          <ion-item *ngFor="let content of treinamentoContent">
+            <ion-label>{{ content }}</ion-label>
+            <ion-checkbox></ion-checkbox>
+          </ion-item>
+        </div>
+      </div>
+
   </div>
 </ion-content>
 

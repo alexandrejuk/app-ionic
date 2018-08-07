@@ -8,107 +8,126 @@
   <div class="content">
     <!-- software -->
     <div class="card-report">
-        <div class="card-report-header" (click)="onDropDown('software')">
-          <h5 class="title text-bold">
-            <ion-icon name="bookmarks"></ion-icon> SOFTWARE
-          </h5>
-          <button ion-button color="primary-dark" clear>
-            <ion-icon name="md-arrow-down"></ion-icon>
-          </button>
-        </div>
-        <div class="card-report-content" *ngIf="dropDown.software">
-
-          <ion-list>
-            <ion-item-sliding #item>
-              <ion-item>
-                Secullum 4
-              </ion-item>
-              <ion-item-options side="left">
-                <button ion-button color="danger" (click)="actionRepport('remover')">
-                  <ion-icon name="md-trash"></ion-icon>
-                </button>
-              </ion-item-options>
-              <ion-item-options side="right">
-                <button ion-button color="primary" (click)="actionRepport('editar')">
-                  <ion-icon name="create"></ion-icon>
-                </button>
-              </ion-item-options>
-            </ion-item-sliding>
-            <ion-item-sliding #item>
-              <ion-item>
-                Flex Time 6
-              </ion-item>
-              <ion-item-options side="left">
-                <button ion-button color="danger" (click)="actionRepport('remover')">
-                  <ion-icon name="md-trash"></ion-icon>
-                </button>
-              </ion-item-options>
-              <ion-item-options side="right">
-                <button ion-button color="primary" (click)="actionRepport('editar')">
-                  <ion-icon name="create"></ion-icon>
-                </button>
-              </ion-item-options>
-            </ion-item-sliding>
-          </ion-list>
-
-          <button ion-button color="primary-dark" clear (click)="gotToRepportPage('SoftwarePage')" full>
-            Adicionar
-          </button>
-        </div>
+      <div class="card-report-header" (click)="onDropDown('software')">
+        <h5 class="title text-bold">
+          <ion-icon name="bookmarks"></ion-icon> SOFTWARE
+        </h5>
+        <button ion-button color="primary-dark" clear>
+          <ion-icon name="md-arrow-down"></ion-icon>
+        </button>
       </div>
+      <div class="card-report-content" *ngIf="dropDown.software">
+
+        <ion-list>
+          <ion-item-sliding #item>
+            <ion-item>
+              Secullum 4
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button color="danger" (click)="actionRepport('remover')">
+                <ion-icon name="md-trash"></ion-icon>
+              </button>
+            </ion-item-options>
+            <ion-item-options side="right">
+              <button ion-button color="primary" (click)="actionRepport('editar')">
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+          <ion-item-sliding #item>
+            <ion-item>
+              Flex Time 6
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button color="danger" (click)="actionRepport('remover')">
+                <ion-icon name="md-trash"></ion-icon>
+              </button>
+            </ion-item-options>
+            <ion-item-options side="right">
+              <button ion-button color="primary" (click)="actionRepport('editar')">
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+
+        <button ion-button color="primary-dark" clear (click)="gotToRepportPage('SoftwarePage')" full>
+          Adicionar
+        </button>
+      </div>
+    </div>
     <!-- software -->
 
-        <!-- equipments -->
-        <div class="card-report">
-            <div class="card-report-header" (click)="onDropDown('equipment')">
-              <h5 class="title text-bold">
-                <ion-icon name="bookmarks"></ion-icon> EQUIPAMENTO
-              </h5>
-              <button ion-button color="primary-dark" clear>
-                <ion-icon name="md-arrow-down"></ion-icon>
-              </button>
-            </div>
-            <div class="card-report-content" *ngIf="dropDown.equipment">
+    <!-- equipments -->
+    <div class="card-report">
+      <div class="card-report-header" (click)="onDropDown('equipment')">
+        <h5 class="title text-bold">
+          <ion-icon name="bookmarks"></ion-icon> EQUIPAMENTO
+        </h5>
+        <button ion-button color="primary-dark" clear>
+          <ion-icon name="md-arrow-down"></ion-icon>
+        </button>
+      </div>
+      <div class="card-report-content" *ngIf="dropDown.equipment">
 
-              <ion-list>
-                <ion-item-sliding #item>
-                  <ion-item>
-                    Orion 6 B N. 465465446064165046
-                  </ion-item>
-                  <ion-item-options side="left">
-                    <button ion-button color="danger" (click)="actionRepport('remover')">
-                      <ion-icon name="md-trash"></ion-icon>
-                    </button>
-                  </ion-item-options>
-                  <ion-item-options side="right">
-                    <button ion-button color="primary" (click)="actionRepport('editar')">
-                      <ion-icon name="create"></ion-icon>
-                    </button>
-                  </ion-item-options>
-                </ion-item-sliding>
-                <ion-item-sliding #item>
-                  <ion-item>
-                    Orion 6 B N. 465465446064165046
-                  </ion-item>
-                  <ion-item-options side="left">
-                    <button ion-button color="danger" (click)="actionRepport('remover')">
-                      <ion-icon name="md-trash"></ion-icon>
-                    </button>
-                  </ion-item-options>
-                  <ion-item-options side="right">
-                    <button ion-button color="primary" (click)="actionRepport('editar')">
-                      <ion-icon name="create"></ion-icon>
-                    </button>
-                  </ion-item-options>
-                </ion-item-sliding>
-              </ion-list>
-
-              <button ion-button color="primary-dark" clear (click)="gotToRepportPage('EquipmentPage')" full>
-                Adicionar
+        <ion-list>
+          <ion-item-sliding #item>
+            <ion-item>
+              Orion 6 B N. 465465446064165046
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button color="danger" (click)="actionRepport('remover')">
+                <ion-icon name="md-trash"></ion-icon>
               </button>
-            </div>
-          </div>
-        <!-- equipments -->
+            </ion-item-options>
+            <ion-item-options side="right">
+              <button ion-button color="primary" (click)="actionRepport('editar')">
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+          <ion-item-sliding #item>
+            <ion-item>
+              Orion 6 B N. 465465446064165046
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button color="danger" (click)="actionRepport('remover')">
+                <ion-icon name="md-trash"></ion-icon>
+              </button>
+            </ion-item-options>
+            <ion-item-options side="right">
+              <button ion-button color="primary" (click)="actionRepport('editar')">
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+
+        <button ion-button color="primary-dark" clear (click)="gotToRepportPage('EquipmentPage')" full>
+          Adicionar
+        </button>
+      </div>
+    </div>
+    <!-- equipments -->
+    <!-- Pendencias -->
+    <div class="card-report">
+      <div class="card-report-header" (click)="onDropDown('pendencia')">
+        <h5 class="title text-bold">
+          <ion-icon name="bookmarks"></ion-icon> PENDENCIA
+        </h5>
+        <button ion-button color="primary-dark" clear>
+          <ion-icon name="md-arrow-down"></ion-icon>
+        </button>
+      </div>
+      <div class="card-report-content" *ngIf="dropDown.pendencia">
+
+        <ion-item>
+          <ion-label floating color="primary">Descrição</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+      </div>
+    </div>
+    <!-- Pendencias -->
   </div>
 </ion-content>
 

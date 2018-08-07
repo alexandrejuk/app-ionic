@@ -27,11 +27,6 @@ export class RelatorioPage {
     SoftwarePage,
   };
 
-  public isShow = true;
-
-
-
-
   public equipamentoActions = [
     'Retirado',
     'Trocar Peça',

@@ -9,19 +9,9 @@ page-pecas {
     height: 100vh !important;
   }
 
-  .gallery {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+  .content {
+    padding: 10px;
   }
-
-  .photo-gallery {
-    width: 45%;
-    height: auto;
-    margin: 4px auto;
-    background-size: cover;
-  }
-
 
   .button-action {
     margin: 16px auto;

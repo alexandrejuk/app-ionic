@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 import { SelectSearchableComponent } from 'ionic-select-searchable';
 
+import { FotoPage } from './../foto/foto';
 import { PecasPage } from './../pecas/pecas';
 import { RetirarPage } from './../retirar/retirar';
 
@@ -1219,6 +1220,7 @@ export class EquipmentPage {
   public dropDown = {
     treinamento: false,
     instalacao: false,
+    fotos: false,
   };
 
   public treinamentoContent = [
@@ -1243,6 +1245,7 @@ export class EquipmentPage {
   ]
 
   private pages = {
+    FotoPage,
     PecasPage,
     RetirarPage,
   };
@@ -1265,5 +1268,9 @@ export class EquipmentPage {
 
   radioButtonChange(page) {
     return this.navCtrl.push(this.pages[page]);
+  }
+
+  gotToCamera() {
+    console.log('eu sou uma camera')
   }
 }
