@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 import { EquipmentPage } from './../equipment/equipment';
 import { SoftwarePage } from './../software/software';
+import { PreViewPage } from './../pre-view/pre-view';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class RelatorioPage {
   private pages = {
     EquipmentPage,
     SoftwarePage,
+    PreViewPage,
   };
 
   public equipamentoActions = [
@@ -46,6 +48,10 @@ export class RelatorioPage {
 
   gotToRepportPage = (page) => {
     return this.navCtrl.push(this.pages[page]);
+  }
+
+  goToPreView() {
+    this.navCtrl.push(this.pages.PreViewPage);
   }
 
 }

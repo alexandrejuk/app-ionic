@@ -72,6 +72,10 @@
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-4.8.0.tgz#2373e77c1187c17515790cee009839b1d3eb74c4"
 
+"@ionic-native/screen-orientation@^4.11.0":
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/screen-orientation/-/screen-orientation-4.11.0.tgz#aeacfa363cc066c75a224b933918a7ca8b957daa"
+
 "@ionic-native/splash-screen@4.8.0":
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-4.8.0.tgz#0bfd5edefcda051eea25932d64801e3393ba8099"
@@ -1171,6 +1175,10 @@ es6-map@^0.1.3:
     es6-set "~0.1.5"
     es6-symbol "~3.1.1"
     event-emitter "~0.3.5"
+
+es6-promise-plugin@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/es6-promise-plugin/-/es6-promise-plugin-4.2.2.tgz#cfa0cc1383d91f999a62a2bbf4bd97bec305e0ac"
 
 es6-set@~0.1.5:
   version "0.1.5"

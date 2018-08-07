@@ -1,0 +1,35 @@
+page-assinatura {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+
+  ion-header {
+    display: flex;
+    align-items: center;
+    background: #074C8B !important;
+    color: #fff;
+    justify-content: space-around;
+    padding-right: 15px;
+    font-size: 1.2em;
+  }
+
+  ion-header ion-nav ion-title {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1em !important;
+  }
+
+  ion-content {
+    background: transparent !important;
+  }
+  .content {
+    background: white;
+    padding: 10px;
+  }
+  .button-action {
+    margin: 4px auto;
+    text-align: center;
+  }
+
+  .signature-box {
+    border: 1px dashed #c1c1c1;
+  }
+}
