@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
-import { ModalController } from 'ionic-angular';
-import { ModalEquipamentoComponent } from './modal-equipamento/modal-equipamento';
+import { EquipmentPage } from './../equipment/equipment';
+import { SoftwarePage } from './../software/software';
 
 
 @Component({
@@ -17,55 +17,40 @@ export class RelatorioPage {
   public treinamentos = [];
   public Equipamentos = [];
   public dropDown = {
-    treinamento: false,
+    software: false,
     pendencia: false,
-    equipamentos: false,
+    equipment: false,
   };
 
-  public treinamentoContent = [
-    'Abonos',
-    'Backup',
-    'Cadastros',
-    'Importação',
-    'Justificativas',
-    'Parâmetros',
-    'Relatórios',
-  ]
+  private pages = {
+    EquipmentPage,
+    SoftwarePage,
+  };
 
-  public softwares = [
-    'SECULLUM ACESSO.NET',
-    'SECULLUM ACESSO',
-    'SECULLUM ACADEMIA',
-    'SECULLUM REFEITÓRIO',
-    'INSPELL',
-    'FLEXTIME 6',
-    'FLEXTIME JR',
-    'IPONTO 3',
-    'PONTO SECULLUM 4',
-    'PONTO SECULLUM 4 CLOUD',
-    'SISTEMA HENRY 7X',
-    'COLETOR KURUMIM',
-    'CLREP',
-    'TOP RONDA VIGIA',
-    'TOP ACESSO',
-    'PROGRAMADOR KURUMIM',
-    'REP WEB'
-  ]
+  public isShow = true;
+
+
+
 
   public equipamentoActions = [
     'Retirado',
     'Trocar Peça',
   ]
 
+
   constructor(
     public navCtrl: NavController,
-    public modalCtrl: ModalController) { }
+  ) { }
 
-  presentModalEquipamento() {
-    const modal = this.modalCtrl.create(ModalEquipamentoComponent);
-    modal.present();
+  onDropDown = type =>
+    this.dropDown = { ...this.dropDown, [type]: !this.dropDown[type] };
+
+  actionRepport(e) {
+    console.log(e);
   }
 
-  onDropDown = type =>  this.dropDown = { ...this.dropDown, [type]: !this.dropDown[type] };
+  gotToRepportPage = (page) => {
+    return this.navCtrl.push(this.pages[page]);
+  }
 
 }

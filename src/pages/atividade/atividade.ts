@@ -33,18 +33,20 @@ export class AtividadePage {
 
 
   criarAtividade(tipo: string, action, fab) {
-    const atividade = {
-      _id: this.atividades.length + 1,
-      descricao: '',
-      atividade_id: null,
-      monitoramentos: [],
-      tipo: tipo,
-      funcionario_id: 25,
-      status: 'deslocamento_iniciado',
-      synced: false,
-    };
-    this.showConfirm(this.messageAlert[action], atividade);
-    fab.close();
+    console.log(fab.close)
+    // const atividade = {
+    //   _id: this.atividades.length + 1,
+    //   descricao: '',
+    //   atividade_id: null,
+    //   monitoramentos: [],
+    //   tipo: tipo,
+    //   funcionario_id: 25,
+    //   status: 'deslocamento_iniciado',
+    //   synced: false,
+    // };
+    // this.showConfirm(this.messageAlert[action], atividade);
+    // fab.close();
+    
   }
 
   presentToast({ message }) {

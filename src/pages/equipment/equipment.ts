@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
+import { SelectSearchableComponent } from 'ionic-select-searchable';
+
+import { PecasPage } from './../pecas/pecas';
+import { RetirarPage } from './../retirar/retirar';
 
 @Component({
-  selector: 'modal-equipamento-component',
-  templateUrl: './modal-equipamento.html'
+  selector: 'page-equipment',
+  templateUrl: 'equipment.html'
 })
-export class ModalEquipamentoComponent {
+@IonicPage({
+  name: 'EquipmentPage',
+})
+export class EquipmentPage {
 
-  public title = 'Equipamento';
-
+  public equipmentoActions;
   public equipamentos = [
     {
       modelo: 'CATRACA FIT BIO + PROX',
@@ -1208,14 +1214,56 @@ export class ModalEquipamentoComponent {
         { id: 12, descricao: 'Porta Fiscal', preco: 0 },
       ],
     },
-  ]
-  public situacoesEquipamento = [
-    'Retirado',
-    'Instalado',
-    'Garantia',
-    'Troca de Peça',
+  ];
+
+  public dropDown = {
+    treinamento: false,
+    instalacao: false,
+  };
+
+  public treinamentoContent = [
+    'Biometria',
+    'Coletor',
+    'Data/Hora',
+    'Exportação',
+    'Enviar/Receber',
+    'Gerenciador',
+    'Importação',
+    'Pendrive',
   ]
 
-  constructor(public navCtrl: NavController) {}
+  public instalacaoContent = [
+    'Boleto + NF',
+    'Bobina',
+    'Chaves',
+    'Crachás',
+    'Fonte',
+    'Fonte/Bateria',
+    'Pino Bobina',
+  ]
 
+  private pages = {
+    PecasPage,
+    RetirarPage,
+  };
+
+  public equipamento;
+
+  public title="Equipamento"
+
+  constructor(public navCtrl: NavController) { }
+
+  equipamentoChange(event: {
+    component: SelectSearchableComponent,
+    value: any
+  }) {
+    console.log('port:', event.value);
+  }
+
+  onDropDown = type =>
+    this.dropDown = { ...this.dropDown, [type]: !this.dropDown[type] };
+
+  radioButtonChange(page) {
+    return this.navCtrl.push(this.pages[page]);
+  }
 }

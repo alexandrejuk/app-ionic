@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
-import { RelatorioPage } from './relatorio';
+import { PecasPage } from './pecas';
 
 @NgModule({
   declarations: [
-    RelatorioPage,
+    PecasPage,
   ],
   imports: [
-    IonicPageModule.forChild(RelatorioPage),
+    IonicPageModule.forChild(PecasPage),
   ],
   entryComponents: [
-    RelatorioPage,
+    PecasPage,
   ],
 })
 
-export class RelatorioModule { }
+export class PecasModule { }

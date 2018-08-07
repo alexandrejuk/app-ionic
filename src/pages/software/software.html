@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-item>
+      <ion-label color="primary">Software</ion-label>
+      <select-searchable
+        item-content
+        [(ngModel)]="software"
+        [items]="softwares"
+        itemValueField="id"
+        itemTextField="name"
+        [canSearch]="true"
+        (onChange)="softwareChange($event)">
+      </select-searchable>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">Observação</ion-label>
+        <ion-input placeholder="Text Input"></ion-input>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-label color="primary">Tópicos</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let content of treinamentoContent">
+      <ion-label>{{ content }}</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="button-action">
+    <button ion-button color="secondary" round>Salvar</button>
+  </div>
+</ion-footer>

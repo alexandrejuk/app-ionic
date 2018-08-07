@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
-import { RelatorioPage } from './relatorio';
+import { RetirarPage } from './retirar';
 
 @NgModule({
   declarations: [
-    RelatorioPage,
+    RetirarPage,
   ],
   imports: [
-    IonicPageModule.forChild(RelatorioPage),
+    IonicPageModule.forChild(RetirarPage),
   ],
   entryComponents: [
-    RelatorioPage,
+    RetirarPage,
   ],
 })
 
-export class RelatorioModule { }
+export class RetirarModule { }

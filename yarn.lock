@@ -1857,6 +1857,10 @@ ionic-angular@3.9.2:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.9.2.tgz#75053e4a422aaae7d7cd668cc92cfd5cb29d38cc"
 
+ionic-select-searchable@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/ionic-select-searchable/-/ionic-select-searchable-2.9.0.tgz#ea2fc8018f3956af19f6c96d742bfa65293cc57e"
+
 ionicons@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
