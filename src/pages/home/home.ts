@@ -9,7 +9,6 @@ import { IonicPage } from 'ionic-angular';
   name: 'HomePage',
 })
 export class HomePage {
-
-  public title="Atendimentos"
-
+  public title= 'Atendimentos';
+  public atendimentos = 'hoje';
 }

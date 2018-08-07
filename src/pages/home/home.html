@@ -2,9 +2,14 @@
   <ion-navbar color="primary">
     <ion-title>{{ title }}</ion-title>
   </ion-navbar>
+  <ion-segment [(ngModel)]="atendimentos">
+    <ion-segment-button value="hoje">Hoje</ion-segment-button>
+    <ion-segment-button value="amanha">Amanhã</ion-segment-button>
+  </ion-segment>
 </ion-header>
 <ion-content>
-  <div class="content">
-    <card-atendimento-component></card-atendimento-component>
+  <div class="content" [ngSwitch]="atendimentos">
+    <card-atendimento-component *ngSwitchCase="'hoje'"></card-atendimento-component>
+    <card-atendimento-component *ngSwitchCase="'amanha'"></card-atendimento-component>
   </div>
 </ion-content>
